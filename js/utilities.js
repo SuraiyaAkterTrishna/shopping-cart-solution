@@ -13,6 +13,7 @@ function updateNumber(isIncrease, inputFieldId){
     NumberField.value = newNumber;
     return newNumber;
 }
+
 function updateTotalPrice(newNumber, totalElementId, unit){
     const TotalPrice = newNumber * unit;
     const TotalElement = document.getElementById(totalElementId);
