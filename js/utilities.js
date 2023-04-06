@@ -29,7 +29,7 @@ function getTextElementById(elementId){
 function subTotal(){
     const currentPhoneTotal = getTextElementById('phone-total');
     const currentCaseTotal = getTextElementById('case-total');
-    const subTotal = currentPhoneTotal + currentCaseTotal;
+    const currentSubTotal = currentPhoneTotal + currentCaseTotal;
     const subTotalElement = document.getElementById('sub-total');
-    subTotalElement.innerText = subTotal;
+    subTotalElement.innerText = currentSubTotal;
 }
