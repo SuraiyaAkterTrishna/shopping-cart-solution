@@ -7,7 +7,12 @@ function updateNumber(isIncrease, inputFieldId){
         newNumber = previousNumber + 1;   
     }
     else{
-        newNumber = previousNumber - 1;
+        if(previousNumber >1){
+            newNumber = previousNumber - 1;
+        }
+        else{
+            newNumber = previousNumber;
+        }
     }
     NumberField.value = newNumber;
     return newNumber;
