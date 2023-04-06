@@ -26,3 +26,10 @@ function getTextElementById(elementId){
     const currentPhoneTotal = parseInt(currentPhoneTotalString);
     return currentPhoneTotal;
 }
+function subTotal(){
+    const currentPhoneTotal = getTextElementById('phone-total');
+    const currentCaseTotal = getTextElementById('case-total');
+    const subTotal = currentPhoneTotal + currentCaseTotal;
+    const subTotalElement = document.getElementById('sub-total');
+    subTotalElement.innerText = subTotal;
+}
