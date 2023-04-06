@@ -27,17 +27,18 @@ function getTextElementById(elementId){
     return currentPhoneTotal;
 }
 
-function setTextElementValueById(elementId){
+function setTextElementValueById(elementId, value){
     const totalElement = document.getElementById(elementId);
-    totalElement.innerText = currentTotal;
+    totalElement.innerText = value;
 }
 function subTotal(){
     // subtotal calculate 
     const currentPhoneTotal = getTextElementById('phone-total');
     const currentCaseTotal = getTextElementById('case-total');
     const currentSubTotal = currentPhoneTotal + currentCaseTotal;
-    
 
+    setTextElementValueById('sub-total', value);
     // tax amount calculate 
+    
 
 }
