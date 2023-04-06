@@ -37,8 +37,14 @@ function subTotal(){
     const currentCaseTotal = getTextElementById('case-total');
     const currentSubTotal = currentPhoneTotal + currentCaseTotal;
 
-    setTextElementValueById('sub-total', value);
+    setTextElementValueById('sub-total', currentSubTotal);
     // tax amount calculate 
-    
+    const taxAmountString = (currentSubTotal * 0.1).toFixed(2);
+    const taxAmount = parseFloat(taxAmountString);
+    setTextElementValueById('tax-amount', taxAmount);
+
+    // final total amount 
+    const finalAmount = currentSubTotal + taxAmount;
+    setTextElementValueById('final-total', finalAmount);
 
 }
