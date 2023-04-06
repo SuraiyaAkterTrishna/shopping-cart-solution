@@ -19,3 +19,10 @@ function updateTotalPrice(newNumber, totalElementId, unit){
     const TotalElement = document.getElementById(totalElementId);
     TotalElement.innerText = TotalPrice;
 }
+// calculate subtotal functions
+function getTextElementById(elementId){
+    const phoneTotalElement = document.getElementById(elementId);
+    const currentPhoneTotalString = phoneTotalElement.innerText;
+    const currentPhoneTotal = parseInt(currentPhoneTotalString);
+    return currentPhoneTotal;
+}
