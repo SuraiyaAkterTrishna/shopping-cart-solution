@@ -26,10 +26,18 @@ function getTextElementById(elementId){
     const currentPhoneTotal = parseInt(currentPhoneTotalString);
     return currentPhoneTotal;
 }
+
+function setTextElementValueById(elementId){
+    const totalElement = document.getElementById(elementId);
+    totalElement.innerText = currentTotal;
+}
 function subTotal(){
+    // subtotal calculate 
     const currentPhoneTotal = getTextElementById('phone-total');
     const currentCaseTotal = getTextElementById('case-total');
     const currentSubTotal = currentPhoneTotal + currentCaseTotal;
-    const subTotalElement = document.getElementById('sub-total');
-    subTotalElement.innerText = currentSubTotal;
+    
+
+    // tax amount calculate 
+
 }
